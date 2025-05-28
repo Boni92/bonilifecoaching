@@ -151,7 +151,7 @@ export default function CommandPalette() {
               <div className="text-gray-300 text-sm mb-2">Follow for more:</div>
               <div className="flex flex-col gap-2">
                 <Link
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/coachingboni/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-gray-400 text-xs hover:text-gray-300 transition-colors duration-200"
@@ -160,7 +160,7 @@ export default function CommandPalette() {
                   <span>Instagram</span>
                 </Link>
                 <Link
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/bonilifecoaching/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-gray-400 text-xs hover:text-gray-300 transition-colors duration-200"
