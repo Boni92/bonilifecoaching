@@ -25,7 +25,7 @@ export default function CommandPalette() {
       shortcut: "⌘P",
       shortcutKey: "p",
       shortcutLabel: "Jobs",
-      href: "https://boni92.github.io/",
+      href: "https://dev.bonilifecoaching.com.au",
     },
     {
       icon: <Users className="w-5 h-5 text-amber-700" strokeWidth={1.5} />,
