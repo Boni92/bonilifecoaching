@@ -44,9 +44,9 @@ export default function CommandPalette() {
     },
     {
       icon: <BookOpen className="w-5 h-5 text-amber-700" strokeWidth={1.5} />,
-      label: "Libros",//Books
+      label: "Books",//Books
       action: "Read",//Leer
-      shortcut: "⌘L",
+      shortcut: "⌘B",
       shortcutLabel: "Library",
       href: "https://tienda.vercel.app",
     },
