@@ -20,37 +20,57 @@ export default function CommandPalette() {
   const menuItems = [
     {
       icon: <Code className="w-5 h-5 text-amber-700" strokeWidth={1.5} />,
-      label: "Programming",//Programación
-      action: "Build",//Crear
+      label: "Programming",
+      action: "Build",
       shortcut: "⌘P",
+      shortcutKey: "p",
       shortcutLabel: "Jobs",
       href: "https://boni92.github.io/",
     },
     {
       icon: <Users className="w-5 h-5 text-amber-700" strokeWidth={1.5} />,
-      label: "Coaching",//Coaching
-      action: "Evolve",//Evolucionar
+      label: "Coaching",
+      action: "Evolve",
       shortcut: "⌘C",
+      shortcutKey: "c",
       shortcutLabel: "Sessions",
-      href: "https://bonilifecoaching.com.au",
+      href: "https://nic.bonilifecoaching.com.au",
     },
     {
       icon: <Lightbulb className="w-5 h-5 text-amber-700" strokeWidth={1.5} />,
-      label: "Ideas",//Ideas
-      action: "Discover",//Descubrir
+      label: "Ideas",
+      action: "Discover",
       shortcut: "⌘I",
+      shortcutKey: "i",
       shortcutLabel: "Blog",
-      href: "https://boniblog.vercel.app",
+      href: "https://blog.bonilifecoaching.com.au",
     },
     {
       icon: <BookOpen className="w-5 h-5 text-amber-700" strokeWidth={1.5} />,
-      label: "Books",//Books
-      action: "Read",//Leer
+      label: "Books",
+      action: "Read",
       shortcut: "⌘B",
+      shortcutKey: "b",
       shortcutLabel: "Library",
-      href: "https://tienda.vercel.app",
+      href: "https://tienda.bonilifecoaching.com.au",
     },
   ]
+
+  // Atajos de teclado Ctrl+Letra o Cmd+Letra para abrir menuItem
+  useEffect(() => {
+    function handleKeyDown(e: KeyboardEvent) {
+      const isCtrlOrCmd = e.ctrlKey || e.metaKey;
+      if (!isCtrlOrCmd) return;
+      const pressedKey = e.key.toLowerCase();
+      const found = menuItems.find(item => item.shortcutKey === pressedKey);
+      if (found) {
+        window.open(found.href, "_blank", "noreferrer");
+        e.preventDefault();
+      }
+    }
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [menuItems])
 
   return (
     <>
