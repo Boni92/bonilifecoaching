@@ -7,7 +7,7 @@ import GradientBackground from "./components/GradientBackground"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Command Palette",
+  title: "Boni Life Coaching",
   description: "Interactive command palette with custom options",
     generator: 'v0.dev'
 }

@@ -20,24 +20,24 @@ export default function CommandPalette() {
   const menuItems = [
     {
       icon: <Code className="w-5 h-5 text-amber-700" strokeWidth={1.5} />,
-      label: "Programación",//Programming
-      action: "Crear",//Build
+      label: "Programming",//Programación
+      action: "Build",//Crear
       shortcut: "⌘P",
-      shortcutLabel: "Trabajos",
+      shortcutLabel: "Jobs",
       href: "https://boni92.github.io/",
     },
     {
       icon: <Users className="w-5 h-5 text-amber-700" strokeWidth={1.5} />,
       label: "Coaching",//Coaching
-      action: "Evolucionar",//Learn
+      action: "Evolve",//Evolucionar
       shortcut: "⌘C",
-      shortcutLabel: "Sesiones",
+      shortcutLabel: "Sessions",
       href: "https://bonilifecoaching.com.au",
     },
     {
       icon: <Lightbulb className="w-5 h-5 text-amber-700" strokeWidth={1.5} />,
       label: "Ideas",//Ideas
-      action: "Descubrir",//Discover
+      action: "Discover",//Descubrir
       shortcut: "⌘I",
       shortcutLabel: "Blog",
       href: "https://boniblog.vercel.app",
@@ -45,9 +45,9 @@ export default function CommandPalette() {
     {
       icon: <BookOpen className="w-5 h-5 text-amber-700" strokeWidth={1.5} />,
       label: "Libros",//Books
-      action: "Leer",//Read
+      action: "Read",//Leer
       shortcut: "⌘L",
-      shortcutLabel: "Biblioteca",
+      shortcutLabel: "Library",
       href: "https://tienda.vercel.app",
     },
   ]
@@ -154,8 +154,8 @@ export default function CommandPalette() {
             <div className="flex justify-between items-center px-4 py-2 bg-[#272727] text-gray-400 text-xs h-9 border-t border-gray-500" style={{backgroundColor: "rgba(39, 39, 39, 0.25)",
               opacity: 1,
               backdropFilter: "blur(90px)"}}>
-              <div>Apretar ⌘K para abrir comandos</div>
-              <div>ESC para cancelar</div>
+              <div>Press ⌘O to open commands</div>
+              <div>ESC to cancel</div>
             </div>
           </div>
         </div>
