@@ -25,7 +25,7 @@ export default function CommandPalette() {
       shortcut: "⌘P",
       shortcutKey: "p",
       shortcutLabel: "Jobs",
-      href: "https://dev.bonilifecoaching.com.au",
+      href: "https://dev.coachingboni.com",
     },
     {
       icon: <Users className="w-5 h-5 text-amber-700" strokeWidth={1.5} />,
@@ -34,7 +34,7 @@ export default function CommandPalette() {
       shortcut: "⌘C",
       shortcutKey: "c",
       shortcutLabel: "Sessions",
-      href: "https://nic.bonilifecoaching.com.au",
+      href: "https://nico.coachingboni.com",
     },
     {
       icon: <Lightbulb className="w-5 h-5 text-amber-700" strokeWidth={1.5} />,
@@ -43,7 +43,7 @@ export default function CommandPalette() {
       shortcut: "⌘I",
       shortcutKey: "i",
       shortcutLabel: "Blog",
-      href: "https://blog.bonilifecoaching.com.au",
+      href: "https://blog.coachingboni.com",
     },
     {
       icon: <BookOpen className="w-5 h-5 text-amber-700" strokeWidth={1.5} />,
@@ -52,7 +52,7 @@ export default function CommandPalette() {
       shortcut: "⌘B",
       shortcutKey: "b",
       shortcutLabel: "Library",
-      href: "https://tienda.bonilifecoaching.com.au",
+      href: "https://tienda.coachingboni.com",
     },
   ]
 
